@@ -2,7 +2,7 @@
   "name": "auth",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://ShantanuSethReal.github.io/Contest_27May/",
+  "homepage": "https://ShantanuSethReal.github.io/Contest_27May",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
