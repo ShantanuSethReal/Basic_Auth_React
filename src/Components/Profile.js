@@ -6,7 +6,7 @@ const Profile = () => {
   const handleLogOut = () => {
     localStorage.removeItem("authtoken");
     localStorage.removeItem("user");
-    navigate("/signup");
+    navigate("/");
   };
   const [cred, setCred] = useState({});
   useEffect(() => {
@@ -24,7 +24,7 @@ setCred(credentials);
   }, []);
 const [loggedIn, setloggedIn] = useState(true);
 const handleSignUp=()=>{
-  navigate("/signup")
+  navigate("/")
 }
   return (
     <>

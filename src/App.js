@@ -8,12 +8,10 @@ import Navbar from './Components/Navbar';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/Contest_27May'>
         <Navbar />
         <Routes>
           <Route path="/" element={<SignUp />}></Route>
-          <Route path="/signup" element={<SignUp />}></Route>
-          <Route path="/login" element={<Login />}></Route>
           <Route path="/profile" element={<Profile />}></Route>
         </Routes>
       </BrowserRouter>

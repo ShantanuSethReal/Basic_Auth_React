@@ -6,23 +6,22 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const [first, setfirst] = useState(0);
-  const checkStage1=()=>{
-    console.log("Btn Profile clicked")
-    if(localStorage.getItem("authtoken")){
+  const checkStage1 = () => {
+    console.log("Btn Profile clicked");
+    if (localStorage.getItem("authtoken")) {
       setfirst(1);
       setTimeout(() => {
         setfirst(0);
       }, 2000);
-    }
-    else{
+    } else {
       setfirst(3);
       setTimeout(() => {
         setfirst(0);
       }, 2000);
-      navigate("/signup")
+      navigate("/");
     }
-  }
-  const checkStage2=()=>{
+  };
+  const checkStage2 = () => {
     console.log("Btn SignUp clicked");
     if (localStorage.getItem("authtoken")) {
       setfirst(2);
@@ -30,9 +29,9 @@ const Navbar = () => {
         setfirst(0);
       }, 2000);
     } else {
-      navigate("/signup");
+      navigate("/");
     }
-  }
+  };
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
